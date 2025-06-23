@@ -15,7 +15,7 @@ namespace Clase_6
 	/// </summary>
 	public class AlumnoProxy: IAlumno
 	{
-		private IAlumno aReal = null;
+		private IAlumno aReal;
 		private string nombre;
 		private int dni, legajo, promedio, calificacion, opcion;
 		private EstrategiaDeComparacion nvaEst;

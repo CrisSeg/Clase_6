@@ -12,3 +12,4 @@ C:\Users\nico_\OneDrive\Documentos\SharpDevelop Projects\clase_6\obj\Debug\net9.
 C:\Users\nico_\OneDrive\Documentos\SharpDevelop Projects\clase_6\obj\Debug\net9.0\clase_6.pdb
 C:\Users\nico_\OneDrive\Documentos\SharpDevelop Projects\clase_6\obj\Debug\net9.0\clase_6.genruntimeconfig.cache
 C:\Users\nico_\OneDrive\Documentos\SharpDevelop Projects\clase_6\obj\Debug\net9.0\ref\clase_6.dll
+C:\Users\nico_\OneDrive\Documentos\SharpDevelop Projects\clase_6\obj\Debug\net9.0\clase_6.sourcelink.json

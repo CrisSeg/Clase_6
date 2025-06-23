@@ -54,11 +54,16 @@ namespace clase_6
         public void actualizar(Observado o) { throw new NotImplementedException(); }
         public int responderPregunta(int pregunta)
         {
+            if (hijos.Count == 0 || hijos == null)
+            {
+                throw new InvalidOperationException("No hay alumnos hijos.");
+            }
+
             int respuesta;
             //Para contar los votos, voy a implementar un diccionario
             Dictionary<int, int> respuestas = new Dictionary<int, int>();
-           
-            foreach(IAlumno hijo in hijos)
+
+            foreach (IAlumno hijo in hijos)
             {
                 respuesta = hijo.responderPregunta(pregunta);
                 if (respuestas.ContainsKey(respuesta))
@@ -72,10 +77,10 @@ namespace clase_6
         }
         public string mostrarCalificacion()
         {
-            string calificacion = "";
+            string calificacion = " ";
             foreach (IAlumno hijo in hijos)
             {
-                calificacion = hijo.mostrarCalificacion();
+                calificacion += hijo.getCalificacion() + "\n";
             }
             return calificacion;
         }
