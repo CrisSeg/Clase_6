@@ -1,5 +1,4 @@
-﻿using clase_6;
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 namespace Clase_6

@@ -1,6 +1,6 @@
-﻿using Clase_6;
+﻿using System;
 
-namespace clase_6
+namespace Clase_6
 {
     public class FabricaAlumnoCompuesto : FabricaDeComparables
     {

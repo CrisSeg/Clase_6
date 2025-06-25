@@ -1,11 +1,10 @@
-﻿using Clase_6;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace clase_6
+namespace Clase_6
 {
     public class AlumnoCompuesto: IAlumno
     {
@@ -60,6 +59,7 @@ namespace clase_6
             }
 
             int respuesta;
+            int respuestaMasVotada = 0;
             //Para contar los votos, voy a implementar un diccionario
             Dictionary<int, int> respuestas = new Dictionary<int, int>();
 
@@ -72,7 +72,14 @@ namespace clase_6
                 }
             }
 
-            int respuestaMasVotada = respuestas.OrderByDescending(kv => kv.Value).First().Key;
+            foreach (var elem in respuestas)
+            {
+                if(elem.Value > respuestaMasVotada)
+                {
+                    respuestaMasVotada = elem.Value;
+                }
+            }
+
             return respuestaMasVotada;
         }
         public string mostrarCalificacion()

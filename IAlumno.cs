@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Creado por SharpDevelop.
+ * Usuario: nico_
+ * Fecha: 7/5/2025
+ * Hora: 23:39
+ * 
+ * Para cambiar esta plantilla use Herramientas | Opciones | Codificación | Editar Encabezados Estándar
+ */
+using System;
 
 namespace Clase_6
 {
